@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>contact</title>
+        <link rel="stylesheet" type="text/css" href="contact.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="App.html"><img src="SAP.png" alt="SAP"></a>
+            </div>
+            <ul>
+                <li><a href="App.html" >Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="work.html">services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="index.html" class="login">login</a></li>
+                
+            </ul>
+        </header>
+        <section>
+            <img src="MON3.png" id="MON">
+            <h2 id="text">contact with     SAP DEVELOPEMENT</h2>
+            <a href="#sec" id="btn">Explore</a>
+        </section>
+        <div class="sec" id="sec">
+            <h2>Contact</h2>
+            <p>For the contact us you can click in this links to reline exactly in the navigation
+                <br><br>we don't have any location information because we don't have any building right now <br><br>
+                but we can build that in the years coming 
+            </p>
+        </div>
+        <script>
+            let MON = document.getElementById('MON')
+            let text = document.getElementById('text')
+            let btn = document.getElementById('btn')
+            let header = document.querySelector('header');
+            window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            btn.style.top = value * 1.5 + 'px';
+            MON.style.left = value  + 'px';
+            
+            header.style.top = value * 0.5 + 'px';
+            text.style.marginLeft = value * 3.5 + 'px';
+            })
+        </script>
+    </body>
+</html>

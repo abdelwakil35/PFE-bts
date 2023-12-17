@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+    background: transparent;
+}
+.text{
+    filter: drop-shadow(2px 0px 0px #4DE8F4) drop-shadow(-2px -2px 0px #FD3E3E);
+    position: absolute;
+    top: calc(50% - 85px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f8f8f8;
+    white-space: nowrap;
+    font-size: 3.5vw;
+    z-index: 9;
+
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #0b111e;
+    
+}
+
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px; 
+}
+header ul li a:hover,
+header ul li a.active{
+    background: #fff;
+    color: #0b111e;
+}
+header ul li a.login{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #f8f8f8;
+    background: transparent;
+    border-radius: 20px; 
+    border:2px solid #f8f8f8;
+    margin-left: 40px;
+}
+header ul li a:hover,
+header ul li a.btn{
+    background: #f8f8f8;
+    color: #0b111e;
+    border: 2px solid #f8f8f8 ;
+    padding: 6px 15x;
+    border-radius: 20px; 
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,#0b111e,transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: n;
+}
+.MS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+
+.MS .btn2{ 
+    position: flex;
+}
+
+    
+    
+#btn2 {
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background: #fff;
+    border: none;
+    outline: none;
+    padding: 6px 15px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 250px;
+    text-decoration: none;
+    filter: drop-shadow(2px 2px 0px #7cf44d) drop-shadow(-2px -2px 0px #fd3eb4);
+}
+
+#btn2:hover,
+#btn2.btn {
+    background: linear-gradient(to bottom left, #7cf44d, #fd3eb4);
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+
+.MS {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 400px;
+  background: transparent;
+  border: 2px solid #0e2d72;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 10px rgba(20, 19, 19, 0.2);
+  color: #fff;
+  border-radius: 30px;
+}
+
+.MS img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+}
+
+
+.content{
+    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 400px;
+  height: 350px;
+  background: transparent;
+  border: 2px solid #0e2d72;
+  color: #fff;
+  border-radius: 30px;
+  position: relative;
+  margin-top: -25%;
+  }
+  .content .text{
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    font-size: 45px;
+    transform: scale(2);
+    padding: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .content .text:before,
+  .content .text:after {
+    padding: 30px;
+    color: white;
+    content: attr(data-text);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0b111e;
+    overflow: hidden;
+    top: 0;
+  }
+  .content .text:before{
+    left: 3px;
+    text-shadow: -2px 0 red;
+    animation: glitch-1 2s linear infinite reverse;
+  }
+  .content .text:after{
+    left: -3px;
+    text-shadow: -2px 0 blue;
+    animation: glitch-2 2s linear infinite reverse;
+  }
+  @keyframes glitch-1 {
+    0% {
+      clip: rect(132px, auto, 101px, 30px);
+    }
+    5% {
+      clip: rect(17px, auto, 94px, 30px);
+    }
+    10% {
+      clip: rect(40px, auto, 66px, 30px);
+    }
+    15% {
+      clip: rect(87px, auto, 82px, 30px);
+    }
+    20% {
+      clip: rect(137px, auto, 61px, 30px);
+    }
+    25% {
+      clip: rect(34px, auto, 14px, 30px);
+    }
+    30% {
+      clip: rect(133px, auto, 74px, 30px);
+    }
+    35% {
+      clip: rect(76px, auto, 107px, 30px);
+    }
+    40% {
+      clip: rect(59px, auto, 130px, 30px);
+    }
+    45% {
+      clip: rect(29px, auto, 84px, 30px);
+    }
+    50% {
+      clip: rect(22px, auto, 67px, 30px);
+    }
+    55% {
+      clip: rect(67px, auto, 62px, 30px);
+    }
+    60% {
+      clip: rect(10px, auto, 105px, 30px);
+    }
+    65% {
+      clip: rect(78px, auto, 115px, 30px);
+    }
+    70% {
+      clip: rect(105px, auto, 13px, 30px);
+    }
+    75% {
+      clip: rect(15px, auto, 75px, 30px);
+    }
+    80% {
+      clip: rect(66px, auto, 39px, 30px);
+    }
+    85% {
+      clip: rect(133px, auto, 73px, 30px);
+    }
+    90% {
+      clip: rect(36px, auto, 128px, 30px);
+    }
+    95% {
+      clip: rect(68px, auto, 103px, 30px);
+    }
+    100% {
+      clip: rect(14px, auto, 100px, 30px);
+    }
+  }
+  @keyframes glitch-2 {
+    0% {
+      clip: rect(129px, auto, 36px, 30px);
+    }
+    5% {
+      clip: rect(36px, auto, 4px, 30px);
+    }
+    10% {
+      clip: rect(85px, auto, 66px, 30px);
+    }
+    15% {
+      clip: rect(91px, auto, 91px, 30px);
+    }
+    20% {
+      clip: rect(148px, auto, 138px, 30px);
+    }
+    25% {
+      clip: rect(38px, auto, 122px, 30px);
+    }
+    30% {
+      clip: rect(69px, auto, 54px, 30px);
+    }
+    35% {
+      clip: rect(98px, auto, 71px, 30px);
+    }
+    40% {
+      clip: rect(146px, auto, 34px, 30px);
+    }
+    45% {
+      clip: rect(134px, auto, 43px, 30px);
+    }
+    50% {
+      clip: rect(102px, auto, 80px, 30px);
+    }
+    55% {
+      clip: rect(119px, auto, 44px, 30px);
+    }
+    60% {
+      clip: rect(106px, auto, 99px, 30px);
+    }
+    65% {
+      clip: rect(141px, auto, 74px, 30px);
+    }
+    70% {
+      clip: rect(20px, auto, 78px, 30px);
+    }
+    75% {
+      clip: rect(133px, auto, 79px, 30px);
+    }
+    80% {
+      clip: rect(78px, auto, 52px, 30px);
+    }
+    85% {
+      clip: rect(35px, auto, 39px, 30px);
+    }
+    90% {
+      clip: rect(67px, auto, 70px, 30px);
+    }
+    95% {
+      clip: rect(71px, auto, 103px, 30px);
+    }
+    100% {
+      clip: rect(83px, auto, 40px, 30px);
+    }
+  }
+
+
+.text-container {
+    margin-left: 30%;
+    margin-top: -27%;
+    flex-grow: 1;
+    
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 800px;
+    height: 350px;
+    background: transparent;
+}
+
+.text-container p {
+    text-align: left;
+    font-family: 'Lilita One', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#btn{
+    text-decoration: none;
+    
+    filter:drop-shadow(2px 2px 0px #4DE8F4) drop-shadow(-2px -2px 0px #FD3E3E);
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #f8f8f8;
+    color: #0b111e;
+    transform: translateY(150px);
+    
+}
+#btn:hover,
+#btn.btn{
+    background: linear-gradient(to bottom left, #4DE8F4, #FD3E3E);
+    color: #0b111e;
+    
+    padding: 6px 15x;
+    border-radius: 20px; 
+}
+
+
+ 
+  
+  .sec {
+    flex-grow: 1;
+  }

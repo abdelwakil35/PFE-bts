@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Rubik+Lines&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap">
+
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="App.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="App.html"><img src="SAP.png" alt="SAP"></a>
+            </div>
+            <ul>
+                <li><a href="App.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="login">login</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="MON10.png" id="MON">
+            <img src="MON9.png" id="MON9">  
+            
+            
+            <h2 id="text" class="text">WELCOME TO SAP DEVELOPEMENT</h2>
+            <a href="#sec" id="btn">Explore</a>
+        </section>
+        <div class="MS">
+            <a href="index.html"><img src="MS3.png" alt="MS3" ></a>
+            
+            <a href="index.html" id="btn2">comming soon !</a>
+        </div>
+        <div class="content">
+            <h2 class="text" data-text="Text Glitch">
+               Text Glitch
+            </h2>
+         </div>
+        <div class="text-container">
+            <p>Description:
+                <br><br>
+                Unlock the full potential of your educational journey with our revolutionary app,
+                 providing an immersive 3D tour of your institution. Whether you're a newcomer or a seasoned student, explore classrooms, 
+                 discover hidden gems, and streamline your schedule effortlessly. 
+                Download now and embark on a virtual adventure—your key to campus exploration awaits!</p>
+            
+        </div>
+        <div class="sec" id="sec">
+            
+            
+            <h2>HOW ARE YOU</h2>
+            <p>
+            </p>
+        </div>
+        
+        <script>
+            let MON = document.getElementById('MON')
+            let MON9 = document.getElementById('MON9')
+            
+            let text = document.getElementById('text')
+            let btn = document.getElementById('btn')
+            let header = document.querySelector('header');
+            
+            window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            
+            MON9.style.left = value * 1 + 'px';
+            
+            header.style.top = value * 0.5 + 'px';
+            text.style.marginLeft = value * 3.5 + 'px';
+            })
+            </script>
+            <div class="sec" id="sec3">
+                <h3>The buetiful think in the website</h3>
+                <p>
+                    Hi 
+                        
+                    </nav>
+                </p>
+            </div>
+    
+    </body>
+</html>

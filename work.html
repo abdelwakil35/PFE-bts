@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>services</title>
+        <link rel="stylesheet" type="text/css" href="work.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="App.html"><img src="SAP.png" alt="SAP"></a>
+            </div>
+            <ul>
+                <li><a href="App.html" >Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="work.html"class="active">services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" class="login">login</a></li>
+                
+            </ul>
+        </header>
+        <section>
+            <img src="MON3.png" id="MON">
+            <h2 id="text">work with  SAP DEVELOPEMENT</h2>
+            <a href="#sec" id="btn">Explore</a>
+            
+        </section>
+        <div class="sec" id="sec">
+            <h2>Parallax scrolling Effects</h2>
+            <p>Introduction:
+                Start with a welcoming and friendly introduction to set the tone. You might want to share your excitement about your project or business. Here's an example:
+                
+                "Welcome to SAP DEVELOPEMENT! We're thrilled to have you here."
+                
+                Brand Story:
+                Share your background or the history of your project or business. Explain what inspired you to start it and how it has evolved over time. You can include personal anecdotes or anecdotes about the company's journey. This helps create a connection with your readers. For example:
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                Your Impact:
+                Describe the impact you aim to have on your audience, community, or industry. How are you making a difference? For example:
+                
+                "We're proud to have positively impacted [Number] of [Your Target Audience] by [How You've Made a Difference], and we're committed to [Future Goals]."
+                
+                Call to Action:
+                Encourage readers to take action, whether it's subscribing to your newsletter, following you on social media, or exploring your products/services. For example:
+                
+                "We invite you to [Call to Action], so you can be part of our journey. Stay updated by subscribing to our newsletter, following us on [Social Media Links], or exploring our [Products/Services]."
+                
+                Contact Information:
+                Provide contact details or links to your contact page if readers want to get in touch with you. For example:
+                
+                "If you have any questions, suggestions, or just want to say hello, feel free to reach out to us at [Your Email Address] or through our [Contact Page]."
+                
+            </p>
+        </div>
+        <script>
+            let MON = document.getElementById('MON')
+            let text = document.getElementById('text')
+            let btn = document.getElementById('btn')
+            let header = document.querySelector('header');
+            window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            btn.style.top = value * 1.5 + 'px';
+            MON.style.left = value  + 'px';
+            
+            header.style.top = value * 0.5 + 'px';
+            text.style.marginLeft = value * 3.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
