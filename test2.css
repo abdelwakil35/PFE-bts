@@ -1,0 +1,93 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+html, body {
+  overflow: hidden;
+  background: #0b111e;
+}
+
+ul {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.download {
+  width: 200px;
+  height: 75px;
+  border-radius: 5px;
+  position: relative;
+  color: #23ca62;
+  cursor: pointer;
+  
+}
+
+.download > .fa {
+
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.df,
+.dfn {
+  position: absolute;
+  left: 70px;
+}
+
+.df {
+  top: 20px;
+  font-size: .68em;
+}
+
+.dfn {
+  top: 33px;
+  font-size: 1.08em;
+}
+
+.download-android {
+  background: #000;
+  color: #34a853;
+  border: 1px solid #34a853;
+}
+
+.download-apple {
+  background: #000;
+  color: #666666;
+  border: 1px solid #666666;
+}
+
+.download-windows {
+  background: #000;
+  color: #00a1e5;
+  border: 1px solid #00a1e5;
+}
+
+.download-android:hover {
+  background: #34a853;
+  color: #000;
+  border: 1px solid #34a853;
+}
+.download-apple:hover {
+  background: #f8f8f8;
+  color: #000;
+  border: 1px solid #f8f8f8;
+}
+.download-windows:hover {
+  background: #00a1e5;
+  color: #000;
+  border: 1px solid #00a1e5;
+}
